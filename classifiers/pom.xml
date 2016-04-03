@@ -1,0 +1,108 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.insightcentre</groupId>
+		<artifactId>mltc</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>classifiers</artifactId>
+	<name>NN Related Module </name>
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<nd4j.version>0.4-rc3.8</nd4j.version>
+		<deeplearning4j.version>0.4-rc3.8</deeplearning4j.version>
+		<canova.version>0.0.0.14</canova.version>
+	</properties>
+
+
+	<dependencies>
+
+		<dependency>
+			<groupId>au.com.bytecode</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.stanford.nlp</groupId>
+			<artifactId>stanford-corenlp</artifactId>
+			<version>3.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.stanford.nlp</groupId>
+			<artifactId>stanford-corenlp</artifactId>
+			<version>3.5.2</version>
+			<classifier>models</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.jopt-simple</groupId>
+			<artifactId>jopt-simple</artifactId>
+			<version>5.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.trove4j</groupId>
+			<artifactId>trove4j</artifactId>
+			<version>3.0.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.nd4j</groupId>
+			<artifactId>nd4j-x86</artifactId>
+			<version>0.4-rc3.8</version>
+		</dependency>
+
+		<!--<dependency> <groupId>org.nd4j</groupId> <artifactId>nd4j-jcublas-common</artifactId> 
+			<version>0.4-rc3.7</version> </dependency> -->
+
+		<!-- <dependency> <groupId>org.nd4j</groupId> <artifactId>nd4j-jblas</artifactId> 
+			<version>0.4-rc3.6</version> </dependency> -->
+
+		<!-- <dependency> <groupId>org.nd4j</groupId> <artifactId>nd4j-jblas</artifactId> 
+			<version>${nd4j.version}</version> </dependency> -->
+
+		<dependency>
+			<groupId>org.nd4j</groupId>
+			<artifactId>canova-api</artifactId>
+			<version>${canova.version}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.deeplearning4j</groupId>
+			<artifactId>deeplearning4j-core</artifactId>
+			<version>${deeplearning4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.deeplearning4j</groupId>
+			<artifactId>deeplearning4j-nlp</artifactId>
+			<version>${deeplearning4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.deeplearning4j</groupId>
+			<artifactId>deeplearning4j-ui</artifactId>
+			<version>${deeplearning4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+	</dependencies>
+
+
+</project>
